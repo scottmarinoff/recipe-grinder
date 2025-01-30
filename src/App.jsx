@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import JSZip from "jszip";
 import { extractIngredients } from "./utils/ingredientParser";
 import { standardizeUnit } from "./utils/unitStandardizer";
