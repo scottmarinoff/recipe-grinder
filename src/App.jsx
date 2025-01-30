@@ -128,7 +128,7 @@ function App() {
       <input type="file" onChange={handlePreferencesChange} />
       <button onClick={handleSave}>Save Changes</button>
 
-      {ingredients && ingredients.length > 0? ( // Conditionally render the lists
+      {/*{ingredients && ingredients.length > 0? ( // Conditionally render the lists
         <>
           <h2>Similar Ingredients:</h2>
           <ul>
@@ -153,7 +153,7 @@ function App() {
         </>
       ): (
         <p>Please upload a zip file to begin.</p> // Message to show initially
-      )}
+      )}*/}
     </div>
   );
 }
