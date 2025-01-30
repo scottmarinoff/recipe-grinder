@@ -1,7 +1,7 @@
 {
   "name": "recipe-grinder",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,6 +29,6 @@
     "vite": "^6.0.5"
   },
   "engines": {
-    "node": ">=16.0.0" // Or your preferred Node.js version
+    "node": ">=16.0.0"
   }
 }
