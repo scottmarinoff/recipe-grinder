@@ -5,6 +5,9 @@ import { standardizeUnit } from "./utils/unitStandardizer";
 import { findSimilarIngredients } from "./utils/ingredientMatcher";
 
 function App() {
+
+  return <h1>Hello from Vercel!</h1>;
+  
   const [ingredients, setIngredients] = useState();
   const [unitPreferences, setUnitPreferences] = useState(null);
   const [similarIngredients, setSimilarIngredients] = useState();
