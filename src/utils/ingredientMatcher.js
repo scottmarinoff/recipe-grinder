@@ -1,7 +1,7 @@
 import stringSimilarity from 'string-similarity';
 
 export const findSimilarIngredients = (ingredients) => {
-  const similarPairs =;
+  const similarPairs = [];
   for (let i = 0; i < ingredients.length; i++) {
     for (let j = i + 1; j < ingredients.length; j++) {
       const similarity = stringSimilarity.compareTwoStrings(
