@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+#root {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Previous styles */
+
+li.quantity {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+li.unit {
+  font-style: italic;
+  margin-right: 5px;
+}
+
+li.name {
+  /* No specific styling for name */
+}
