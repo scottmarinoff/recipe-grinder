@@ -127,25 +127,33 @@ function App() {
       <input type="file" onChange={handleFileChange} />
       <input type="file" onChange={handlePreferencesChange} />
       <button onClick={handleSave}>Save Changes</button>
-      <h2>Similar Ingredients:</h2>
-      <ul>
-        {similarIngredients.map(([ingredient1, ingredient2], index) => (
-          <li key={index}>
-            {ingredient1.name} - {ingredient2.name}
-            <button onClick={() => handleMerge(index)}>Merge</button>
-          </li>
-        ))}
-      </ul>
-      <h2>Ingredients:</h2>
-      <ul>
-        {ingredients.map((ingredient, index) => (
-          <li key={index}>
-            <span className="quantity">{ingredient.quantity}</span>
-            <span className="unit">{ingredient.unit}</span>
-            <span className="name">{ingredient.name}</span>
-          </li>
-        ))}
-      </ul>
+
+      {ingredients.length > 0? ( // Conditionally render the lists
+        <>
+          <h2>Similar Ingredients:</h2>
+          <ul>
+            {similarIngredients.map(([ingredient1, ingredient2], index) => (
+              <li key={index}>
+                {ingredient1.name} - {ingredient2.name}
+                <button onClick={() => handleMerge(index)}>Merge</button>
+              </li>
+            ))}
+          </ul>
+
+          <h2>Ingredients:</h2>
+          <ul>
+            {ingredients.map((ingredient, index) => (
+              <li key={index}>
+                <span className="quantity">{ingredient.quantity}</span>
+                <span className="unit">{ingredient.unit}</span>
+                <span className="name">{ingredient.name}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ): (
+        <p>Please upload a zip file to begin.</p> // Message to show initially
+      )}
     </div>
   );
 }
